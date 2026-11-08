@@ -8,7 +8,7 @@
     <title>Облачный Альбом</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600&family=Lato:wght@400;700&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
     <style>
         :root {
             --bg: #0b0a09;
@@ -195,7 +195,11 @@
             font-size: clamp(40px, 6.4vw, 84px); line-height: 1; letter-spacing: -0.02em;
             max-width: 16ch;
         }
-        .hero h1 em { font-style: italic; color: var(--accent); }
+        .hero h1 em {
+            font-style: italic; color: #2c28c1;
+            font-family: "PT Sans", sans-serif; font-weight: 700;
+            font-size: clamp(44px, 7.3vw, 96px); text-align: right;
+        }
         .photo-count { margin-top: 20px; color: var(--muted); font-size: 16px; }
         .photo-count strong { color: var(--fg); font-weight: 600; }
 
@@ -504,7 +508,7 @@
         <main class="page">
             <section class="hero">
                 <span class="eyebrow">Личная галерея</span>
-                <h1>Ваши моменты, <em>в облаке</em></h1>
+                <h1>Ваши моменты, <em>в облаках</em></h1>
                 <p class="photo-count" id="photo-count" aria-live="polite"></p>
             </section>
 
